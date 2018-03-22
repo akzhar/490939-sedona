@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
   <title>Седона - небольшой городок в Аризоне</title>
 </head>
-<body class="page">
+<body>
   <div class="wrapper">
 
     <header class="main-header">
@@ -84,14 +84,14 @@
             <div>
               <h2>Небольшая площадь</h2>
               <p>— №3 —</p>
-              <p>Все достопримечательности находятся очень близко</p>
+              <p>Все достопримечательности<br>находятся очень близко</p>
             </div>
           </li>
           <li class="advantages-item">
             <div>
               <h2>Красивая дорога</h2>
               <p>— №4 —</p>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
             </div>
           </li>
           <li class="advantages-item">
@@ -112,29 +112,29 @@
         <div class="search-form">
           <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <p class="search-form-date">
-              <label for="search-form-date-in">Дата заезда:</label>
-              <input type="text" name="search-form-date-in" placeholder="24 апреля 2017" value="" id="search-form-date-in">
+            <p class="search-form-sets">
+              <label for="search-form-sets-in">Дата заезда:</label>
+              <input type="text" name="search-form-sets-in" placeholder="24 апреля 2017" value="" id="search-form-sets-in">
             </p>
-            <p class="search-form-date">
-              <label for="search-form-date-out">Дата выезда:</label>
-              <input type="text" name="search-form-date-out" placeholder="4 июля 2017" value="" id="search-form-date-out">
+            <p class="search-form-sets">
+              <label for="search-form-sets-out">Дата выезда:</label>
+              <input type="text" name="search-form-sets-out" placeholder="4 июля 2017" value="" id="search-form-sets-out">
             </p>
-            <div class="search-form-qty">
-              <p class="search-form-wrapper">
+            <div class="search-form-sets">
+              <p class="search-form-wrapper adults">
                 <label for="search-form-adults">Взрослые:</label>
                 <button class="btn minus" type="button">-</button>
-                <b>
+                <div class="output">
                   <output name="search-form-adults" id="search-form-adults">2</output>
-                </b>
+                </div>
                 <button class="btn plus" type="button">+</button>
               </p>
-              <p class="search-form-wrapper">
+              <p class="search-form-wrapper child">
                 <label for="search-form-children">Дети:</label>
                 <button class="btn minus" type="button">-</button>
-                <b>
+                <div class="output">
                   <output name="search-form-children" id="search-form-children">0</output>
-                </b>
+                </div>
                 <button class="btn plus" type="button">+</button>
               </p>
             </div>
@@ -146,7 +146,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1520614389219" width="1200" height="473 frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1520614389219" width="1200" height="593 frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
 
     </main>
