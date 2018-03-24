@@ -12,7 +12,7 @@
 
     <header class="main-header">
       <a href="index.html" class="logo">
-        <img src="img/logo.png" width="138px" height="70px" atl="Логотип">
+        <img src="img/logo.png" alt="Логотип" width="138" height="70">
       </a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
@@ -32,48 +32,60 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main-container">
 
       <section class="filters-form">
         <h2 class="visually-hidden">Фильтры отелей</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="filters-form-infrastructure">
+          <fieldset class="filters-set">
             <legend>Инфраструктура:</legend>
             <p>
-              <input type="checkbox" name="filters-form-infrastructure-swimm" id="filters-form-infrastructure-swimm" checked>
-              <label for="filters-form-infrastructure-swimm">Бассейн</label>
+              <input type="checkbox" name="swimm" id="swimm" checked>
+              <label for="swimm">Бассейн</label>
             </p>
             <p>
-              <input type="checkbox" name="filters-form-infrastructure-parking" id="filters-form-infrastructure-parking">
-              <label for="filters-form-infrastructure-parking">Парковка</label>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
             </p>
             <p>
-              <input type="checkbox" name="filters-form-infrastructure-wifi" id="filters-form-infrastructure-wifi">
-              <label for="filters-form-infrastructure-wifi">Wi-Fi</label>
+              <input type="checkbox" name="wifi" id="wifi">
+              <label for="wifi">Wi-Fi</label>
             </p>
           </fieldset>
-          <fieldset class="filters-form-type">
+          <fieldset class="filters-set">
             <legend>Тип жилья:</legend>
             <p>
-              <input type="checkbox" name="filters-form-type-hotel" id="filters-form-type-hotel" checked>
-              <label for="filters-form-type-hotel">Гостиница</label>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
             </p>
             <p>
-              <input type="checkbox" name="filters-form-type-motel" id="filters-form-type-motel" checked>
-              <label for="filters-form-type-motel">Мотель</label>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
             </p>
             <p>
-              <input type="checkbox" name="filters-form-type-appartments" id="filters-form-type-appartments" checked>
-              <label for="filters-form-type-appartments">Аппартаменты</label>
+              <input type="checkbox" name="appartments" id="appartments" checked>
+              <label for="appartments">Аппартаменты</label>
             </p>
           </fieldset>
-          <p class="price-per-day">
-            <label for="filters-form-price">Стоимость в сутки (Р):</label>
-            <output>От 0</output>
-            <output>До 3000</output>
-            <input type="range" name="filters-form-price" id="filters-form-price" min="0" max="3000" step="100" value="0,2900" multiple>
-          </p>
-          <button class="button-search" type="submit">Показать</button>
+          <fieldset class="price-day">
+            <span>Стоимость в сутки (р):</span>
+            <div class="price-controls">
+              <label class="min-price">от
+                <output type="text" name="min-price" value="0">0</output>
+              </label>
+              <label class="max-price">до
+                <output type="text" name="max-price" value="3000">3000</output>
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="button-search" type="submit">Показать</button>
+          </fieldset>
         </form>
       </section>
 
@@ -105,7 +117,7 @@
         </div>
         <ul class="hotels-selected-list">
           <li class="hotels-selected-item">
-            <img src="img/hotel.jpg" width="135px" height="90px" alt="Amara Resort & Spa">
+            <img src="img/hotel.jpg" alt="Amara Resort & Spa" width="135" height="90">
             <div class="hotels-selected-info">
               <a href="#">Amara Resort & Spa</a>
               <div class="hotels-description">
@@ -118,25 +130,14 @@
               </div>
             </div>
             <div class="hotels-selected-ratio">
-              <ul class="ratio-stars-list">
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="Рейтинг 4 звезды">
-                </li>
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="">
-                </li>
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="">
-                </li>
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="">
-                </li>
-              </ul>
+              <div class=" ratio-stars ratio-stars-four">
+                Рейтинг 4 звезды
+              </div>
               <span class="ratio-ratio">Рейтинг: 8,5</span>
             </div>
           </li>
           <li class="hotels-selected-item">
-            <img src="img/motel.jpg" width="135px" height="90px" alt="Desert Quail Inn">
+            <img src="img/motel.jpg" alt="Desert Quail Inn">
             <div class="hotels-selected-info">
               <a href="#">Desert Quail Inn</a>
               <div class="hotels-description">
@@ -149,22 +150,14 @@
               </div>
             </div>
             <div class="hotels-selected-ratio">
-              <ul class="ratio-stars-list">
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="Рейтинг 3 звезды">
-                </li>
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="">
-                </li>
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="">
-                </li>
-              </ul>
+              <div class=" ratio-stars ratio-stars-three">
+                Рейтинг 3 звезды
+              </div>
               <span class="ratio-ratio">Рейтинг: 8,9</span>
             </div>
           </li>
           <li class="hotels-selected-item">
-            <img src="img/appatments.jpg" width="135px" height="90px" alt="Villas at Poco Diablo">
+            <img src="img/appatments.jpg" alt="Villas at Poco Diablo" width="135" height="90">
             <div class="hotels-selected-info">
               <a href="#">Villas at Poco Diablo</a>
               <div class="hotels-description">
@@ -177,14 +170,9 @@
               </div>
             </div>
             <div class="hotels-selected-ratio">
-              <ul class="ratio-stars-list">
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="Рейтинг 2 звезды">
-                </li>
-                <li class="ratio-stars-item">
-                  <img src="img/star.svg" alt="">
-                </li>
-              </ul>
+              <div class=" ratio-stars ratio-stars-two">
+                Рейтинг 2 звезды
+              </div>
               <span class="ratio-ratio">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -193,7 +181,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-extra">
       <b>#visitsedona</b>
       <ul class="social-buttons-list">
         <li class="button social-button">
