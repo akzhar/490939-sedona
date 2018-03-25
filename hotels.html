@@ -40,30 +40,30 @@
           <fieldset class="filters-set">
             <legend>Инфраструктура:</legend>
             <p>
-              <input type="checkbox" name="swimm" id="swimm" checked>
+              <input class="visually-hidden filters-checkbox" type="checkbox" name="swimm" id="swimm" checked>
               <label for="swimm">Бассейн</label>
             </p>
             <p>
-              <input type="checkbox" name="parking" id="parking">
+              <input class="visually-hidden filters-checkbox" type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
             </p>
             <p>
-              <input type="checkbox" name="wifi" id="wifi">
+              <input class="visually-hidden filters-checkbox" type="checkbox" name="wifi" id="wifi">
               <label for="wifi">Wi-Fi</label>
             </p>
           </fieldset>
           <fieldset class="filters-set">
             <legend>Тип жилья:</legend>
             <p>
-              <input type="checkbox" name="hotel" id="hotel" checked>
+              <input class="visually-hidden filters-checkbox" type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
             </p>
             <p>
-              <input type="checkbox" name="motel" id="motel" checked>
+              <input class="visually-hidden filters-checkbox" type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
             </p>
             <p>
-              <input type="checkbox" name="appartments" id="appartments" checked>
+              <input class="visually-hidden filters-checkbox" type="checkbox" name="appartments" id="appartments" checked>
               <label for="appartments">Аппартаменты</label>
             </p>
           </fieldset>
@@ -71,10 +71,10 @@
             <span>Стоимость в сутки (р):</span>
             <div class="price-controls">
               <label class="min-price">от
-                <output type="text" name="min-price" value="0">0</output>
+                <input type="text" name="min-price" value="0"></input>
               </label>
               <label class="max-price">до
-                <output type="text" name="max-price" value="3000">3000</output>
+                <input type="text" name="max-price" value="3000"></input>
               </label>
             </div>
             <div class="range-controls">
