@@ -121,7 +121,8 @@ a {
   background-color: #779fc2;
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -56px;
+  background-attachment: fixed;
+  background-position: 75px 0px;
 }
 
 .promo img {
@@ -803,6 +804,8 @@ a {
   border: 2px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
+  text-align: center;
+  line-height: 32px;
   text-transform: uppercase;
 }
 
