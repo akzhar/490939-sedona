@@ -664,12 +664,9 @@ a {
   margin-bottom: 23px;
 }
 
-.filters-checkbox:focus+label {
-  color: yellow;
-}
 
 .filters-checkbox:focus+label::before {
-  filter: drop-shadow(0 0 5px rgba(255,255,0,0.7));
+  filter: drop-shadow(0 0 5px rgba(255,255,0,0.9));
 }
 
 .filters-set label {
@@ -691,12 +688,9 @@ a {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.filters-form input:disabled+label,
 .filters-form input:disabled+label::before {
-  background-image: url("../img/checkbox-off-disabled.svg");
-}
-
-.filtrs-form input:checked:disabled+label::before {
-  background-image: url("../img/checkbox-on-disabled.svg");
+  opacity: 0.3;
 }
 
 .price-day {
