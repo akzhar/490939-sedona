@@ -254,8 +254,8 @@ a {
   background-color: #779fc2;
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
+  background-position-x: 50%;
   background-attachment: fixed;
-  background-position: 75px 0px;
 }
 
 .promo img {
@@ -347,31 +347,27 @@ a {
   line-height: 21px;
 }
 
-.advantages-item:nth-child(3) h2,
-.advantages-item:nth-child(4) h2,
-.advantages-item:nth-child(5) h2 {
+.advantages-item h2 {
+  width: 155px;
+  margin: 0 auto;
+}
+
+h2.advantages-head {
   margin-top: 47px;
   margin-bottom: 24px;
   line-height: 21px;
 }
 
-.advantages-item:nth-child(3) p,
-.advantages-item:nth-child(4) p,
-.advantages-item:nth-child(5) p {
+.advantages-text-high,
+.advantages-text-low {
   margin: 0;
   width: 280px;
   line-height: 21px;
 }
 
-.advantages-item:nth-child(3) p:nth-child(3),
-.advantages-item:nth-child(4) p:nth-child(3),
-.advantages-item:nth-child(5) p:nth-child(3) {
+.advantages-text-low {
   margin-top: 21px;
-}
-
-.advantages-item h2 {
-  width: 155px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages-item-description p {
@@ -414,6 +410,7 @@ a {
 .additional-advantages-item p {
   width: 287px;
   margin: 0 auto;
+  margin-bottom: 30px;
   line-height: 21px;
   color: #333333;
 }
@@ -655,7 +652,6 @@ a {
 }
 
 .btn {
-  font-size: 0;
   position: relative;
   width: 38px;
   height: 38px;
@@ -772,7 +768,6 @@ a {
   position: relative;
   width: 46px;
   height: 48px;
-  font-size: 0;
 }
 
 .social-button svg {
@@ -793,6 +788,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-left: 228px;
+  margin-bottom: 5px;
 }
 
 .copyright span {
@@ -802,7 +798,6 @@ a {
 .copyright a {
   margin-left: 8px;
   margin-top: 12px;
-  font-size: 0;
 }
 
 .copyright:hover path,
@@ -1107,11 +1102,10 @@ a {
   -ms-grid-row-align: center;
   align-self: center;
   list-style: none;
-  font-size: 0;
   padding: 0;
   margin-left:auto;
-  margin-right:67px;
-  margin-top: 1px;
+  margin-right:64px;
+  margin-top: 14px;
 }
 
 .hotels-sequence-item {
@@ -1170,13 +1164,14 @@ a {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 150px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-selected-item img {
   margin-left: 72px;
+  margin-top: 30px;
 }
 
 .hotels-selected-info {
@@ -1258,10 +1253,10 @@ a {
   align-items: flex-end;
   margin-left: auto;
   margin-right: 70px;
+  margin-top: 30px;
   min-height: 90px;
 }
 .ratio-stars {
-  font-size: 0;
   background-image: url("../img/star.svg");
 }
 
