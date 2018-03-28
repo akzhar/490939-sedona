@@ -531,13 +531,15 @@ h2.advantages-head {
   display: block;
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
-  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
 }
 
 .modal-error {
   -webkit-animation-name: shake;
   animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .search-form-sets {
