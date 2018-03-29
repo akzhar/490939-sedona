@@ -214,33 +214,40 @@ a {
 }
 
 .main-navigation-item {
-  width: 240px;
-  word-wrap: break-word;
+  width: 20%;
   padding-top: 14px;
   padding-bottom: 16px;
-  text-align: center;
 }
 
-.main-navigation-item a {
-  width: 200px;
+.main-navigation-item:nth-child(1n),
+.main-navigation-item:nth-child(2n) {
+  text-align: left;
 }
 
-.main-navigation-item:nth-child(1) {
-  padding-right: 2px;
+.main-navigation-item:nth-child(3n),
+.main-navigation-item:nth-child(4n) {
+  text-align: right;
 }
 
 .main-navigation-item:nth-child(2) {
-  padding-left: 3px;
-  margin-right: auto;
+  margin-right: 20%;
 }
 
-.main-navigation-item:nth-child(3) {
-  padding-left: 3px;
+.main-navigation-item:nth-child(1n) {
+  padding-left: 72px;
+}
+
+.main-navigation-item:nth-child(2n) {
+  padding-left: 73px;
+}
+
+.main-navigation-item:nth-child(3n) {
+  padding-right: 72px;
   letter-spacing: 0.5px;
 }
 
-.main-navigation-item:nth-child(4) {
-  padding-left: 18px;
+.main-navigation-item:nth-child(4n) {
+  padding-right: 72px;
 }
 
 .main-container {
@@ -532,14 +539,14 @@ h2.advantages-head {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
   -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
+  animation-duration: 0.9s;
 }
 
 .modal-error {
   -webkit-animation-name: shake;
   animation-name: shake;
   -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  animation-duration: 0.6s;
 }
 
 .search-form-sets {
@@ -745,12 +752,15 @@ h2.advantages-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 150px;
   margin-left: 256px;
   padding: 0;
+  margin-top: 10px;
   list-style: none;
 }
 
@@ -758,6 +768,7 @@ h2.advantages-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 4px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -890,12 +901,12 @@ h2.advantages-head {
   background-repeat: no-repeat;
 }
 
-.filters-form input:checked+label::before {
+.filters-checkbox:checked+label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filters-form input:disabled+label,
-.filters-form input:disabled+label::before {
+.filters-checkbox:disabled+label,
+.filters-checkbox:disabled+label::before {
   opacity: 0.3;
 }
 
@@ -1016,6 +1027,7 @@ h2.advantages-head {
   text-align: center;
   line-height: 32px;
   text-transform: uppercase;
+  border-radius: 2px;
 }
 
 .button-search:hover {
